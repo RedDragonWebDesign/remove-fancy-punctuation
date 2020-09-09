@@ -24,6 +24,7 @@ function removeFancyPunctuation(text) {
 	return text;
 }
 
+// https://stackoverflow.com/a/542260/3480193
 function globalReplace(original, searchTxt, replaceTxt) {
 	const regex = new RegExp(searchTxt, 'g');
 	return original.replace(regex, replaceTxt) ;
